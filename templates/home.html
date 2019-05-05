@@ -1,0 +1,16 @@
+<body style="background-color: rgb(250,207,217); text-align: center">
+    <h1 style="font-family: Comic Sans MS; color:rgb(115,90,103);">Welcome to our service!</h1>
+<!--'about' 설명페이지로 -->
+
+    <a style="font-family: Comic Sans MS; color:rgb(20,25,29);" href="{%url 'about'%}">About</a>
+
+
+    <form action="{%url 'result'%}">
+        <textarea minlength = 10 name="fulltext" cols="50" rows="10"> </textarea>
+        <br>
+        <input type="submit" value="word Counting" style="font-family: Comic Sans MS; color:rgb(20,25,29)">
+    </form>
+    <footer style="font-family: Comic Sans MS; color: rgb(20,25,29);">
+        <h3 style="font-style: italic; color:rgb(20,25,29)">Thanks for taking our survey!</h3>
+    </footer>
+</body>

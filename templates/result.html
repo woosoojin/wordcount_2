@@ -1,0 +1,18 @@
+<!-- 홈으로 돌아가는 링크 -->
+<body style="background-color: rgb(250,207,217)">
+    <a href="{%url 'home' %}" style="font-family: Comic Sans MS; color:rgb(20,25,29);">home - click here!</a>
+<!-- 입력한 텍스트 갯수 -->
+    <h1 style="font-style: italic; font-family: Comic Sans MS; font-size: 30px; color:rgb(80, 49, 9)">number of text what you wrote: {{total}}</h1>
+<!-- 내가 입력했던 텍스트 -->
+    <br>
+    <p style="font-style: italic; font-family: Comic Sans MS; font-size: 30px; color:rgb(80, 49, 9)">your text: </p>
+    <p style="font-family: Comic Sans MS; font-size: 20px; color:rgb(20,25,29)">{{full}}</p>
+
+    <br><br>
+<!-- 단어가 몇개들어가 있는지 -->
+    <h1 style="font-style: italic; font-family: Comic Sans MS; font-size: 30px; color:rgb(80, 49, 9)">result of word counting: </h1>
+{%for word, howmany in count %}
+    <p style="font-family: Comic Sans MS; font-size: 20px; color:rgb(20,25,29)">-> {{word}} : {{howmany}}</p>
+<br>
+{%endfor%}
+</body>
